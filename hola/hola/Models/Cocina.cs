@@ -11,12 +11,18 @@ namespace hola.Models
     internal class Cocina
     {
         private Alacena mialacena;
-        public Cocina(Alacena a)
+        private Amasador miamasador;
+        private Cocinera micocinera;
+        public Cocina(Alacena a, Amasador m, Cocinera k)
         {
             mialacena = a;
+            miamasador = m;
+            micocinera = k;
         }
 
         public Alacena Mialacena { get { return mialacena; } }
+        public Amasador MiAmasador { get { return miamasador; } }
+        public Cocinera Micocinera {  get { return micocinera; } }
 
     }
 }
